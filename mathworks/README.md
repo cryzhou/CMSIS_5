@@ -8,7 +8,7 @@ The makefile (link to arm_cortexM_math_Build.mk) is used to build CMSIS_5 to cre
 To build CMSIS_5 package:
 
 ```
-  make -f arm_cortexM_math_Build.mk GNU_ARM_TOOLS_PATH=<Toolchain path>
+make -f arm_cortexM_math_Build.mk GNU_ARM_TOOLS_PATH=<Toolchain path>
 ```
 
-Hear ``` <Toolchain path> ``` is [GNU Arm Embedded Toolchain](https://developer.arm.com/open-source/gnu-toolchain/gnu-rm/downloads).
+Here ``` <Toolchain path> ``` is [GNU Arm Embedded Toolchain](https://developer.arm.com/open-source/gnu-toolchain/gnu-rm/downloads).
