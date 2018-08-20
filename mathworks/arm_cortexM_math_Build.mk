@@ -92,7 +92,7 @@ $(CMSISPKGINCLUDE) :
 	@echo	Copying ARM Cortex-M DSP Include directory
 	$(CP) $(CPFLAGS) $(CMSISDSPINCLUDE) $(CMSISPKGINCLUDE)
 
-$(CMSISPKGLIB) : 
+$(CMSISPKGLIB) : build
 	@echo	Copying DSP library from CMSIS package
 	$(CP) $(CPFLAGS) $(CMSISLIB) $(CMSISPKGLIB)
 	@echo	Copying DSP library compiled with Soft FPU ABI
