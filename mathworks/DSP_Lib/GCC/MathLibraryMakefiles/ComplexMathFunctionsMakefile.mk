@@ -25,11 +25,10 @@ ALL_L_SRCS := $(wildcard $(MathLibraryDir)/*.cpp)
 CPPOBJS := $(patsubst %.cpp,%.cpp.o,$(ALL_L_SRCS))
 ALL_SRCS += $(ALL_L_SRCS)
 
-# Find all cpp files
-ALL_L_SRCS := $(wildcard $(MathLibraryDir)/*.s)
-ASOBJS := $(patsubst %.s,%.s.o,$(ALL_L_SRCS))
+# Find all assembly files
+ALL_L_SRCS := $(wildcard $(MathLibraryDir)/*.S)
+ASOBJS := $(patsubst %.S,%.S.o,$(ALL_L_SRCS))
 ALL_SRCS += $(ALL_L_SRCS)
-
 
 ALL_OBJS += $(addprefix $(OUTPUT_O_DIR)/,$(notdir $(COBJS))) $(addprefix $(OUTPUT_O_DIR)/,$(notdir $(CPPOBJS))) $(addprefix $(OUTPUT_O_DIR)/,$(notdir $(ASOBJS)))
 
