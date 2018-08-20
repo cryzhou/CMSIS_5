@@ -20,6 +20,6 @@ $(OUTPUT_O_DIR)/%.cpp.o : $(MathLibraryDir)/%.cpp
 	@echo 	"### Compiling file: $<"
 	$(CC) $(CPPFLAGS) -o $@ $<
 
-$(OUTPUT_O_DIR)/%.s.o : $(MathLibraryDir)/%.s
+$(OUTPUT_O_DIR)/%.S.o : $(MathLibraryDir)/%.S
 	@echo 	"### Compiling file: $<"
 	$(CC) $(ASFLAGS) -o $@ $<	
