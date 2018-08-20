@@ -82,7 +82,7 @@ all : build
 # C flags
 CFLAGS_STD := -c -MMD -MP -gdwarf-2 -mthumb -Wall -fno-strict-aliasing -ffunction-sections -fdata-sections -ffp-contract=off $(ENDIAN_FLAG) $(DEBUG_FLAGS) $(INCLUDES)
 # Assembly flags
-ASFLAGS_STD := -x assembler-with-cpp $(CFLAGS)
+ASFLAGS_STD := -x assembler-with-cpp $(CFLAGS_STD)
 # CPP flags
 CPPFLAGS_STD := -c -MMD -MP -gdwarf-2 -mthumb -Wall -fno-strict-aliasing -ffunction-sections -fdata-sections -ffp-contract=off $(ENDIAN_FLAG) $(DEBUG_FLAGS) $(INCLUDES)
 # Archiver flags
